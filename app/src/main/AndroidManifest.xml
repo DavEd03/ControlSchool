@@ -13,6 +13,18 @@
         android:theme="@style/Theme.ControlSchool"
         tools:targetApi="31">
         <activity
+            android:name=".Eventos"
+            android:exported="false" />
+        <activity
+            android:name=".Doc"
+            android:exported="false" />
+        <activity
+            android:name=".calificaciones"
+            android:exported="false" />
+        <activity
+            android:name=".Menu"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
