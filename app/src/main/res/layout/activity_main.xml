@@ -3,25 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="#849BAA"
+    android:background="#E9DBCE"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/acceder"
         android:layout_width="168dp"
         android:layout_height="47dp"
-        android:backgroundTint="#000000"
         android:text="INICIAR SESION"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textColorLink="@color/white"
+        app:cornerRadius="10dp"
+        android:onClick="Acceder"
+        android:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.771" />
+        app:layout_constraintVertical_bias="0.771"
+        app:strokeColor="#FF5722"
+        app:strokeWidth="3dp" />
 
     <EditText
         android:id="@+id/editTextText"
@@ -57,7 +61,8 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="183dp"
-        android:layout_height="26dp"
+        android:layout_height="36dp"
+        android:fontFamily="@font/josefin_sans"
         android:text="Matricula"
         android:textColor="#000000"
         android:textSize="24sp"
@@ -70,17 +75,18 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="176dp"
-        android:layout_height="28dp"
+        android:layout_width="307dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/josefin_sans"
         android:text="Contraseña"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintHorizontal_bias="0.673"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52" />
+        app:layout_constraintVertical_bias="0.521" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -90,6 +96,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/logo_Control_School" />
+        app:srcCompat="@mipmap/logo_rmb" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
