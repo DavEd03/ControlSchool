@@ -31,4 +31,16 @@ public class Menu extends AppCompatActivity {
         Intent intent = new Intent(this, Menu.class);
         startActivity(intent);
     }
+    public void Eventos(View view) {
+        Intent intent = new Intent(this, Eventos.class);
+        startActivity(intent);
+    }
+    public void Expediente(View view) {
+        Intent intent = new Intent(this, Doc.class);
+        startActivity(intent);
+    }
+    public void calificaciones(View view) {
+        Intent intent = new Intent(this, calificaciones.class);
+        startActivity(intent);
+    }
 }
