@@ -8,17 +8,214 @@
     android:background="#E9DBCE"
     tools:context=".Doc">
 
+    <Button
+        android:id="@+id/acceder2"
+        android:layout_width="168dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Ir"
+        android:textColor="#000000"
+        android:textColorLink="@color/white"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.825"
+        app:strokeColor="#EB7426"
+        app:strokeWidth="3dp" />
+
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Documentacion "
+        android:layout_width="172dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:text="Expediente "
         android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="44dp"
+        android:layout_height="41dp"
+        android:onClick="MenuBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.034"
+        app:srcCompat="@mipmap/regreso" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="336dp"
+        android:layout_height="387dp"
+        android:background="@drawable/frame_lay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/josefin_sans_medium"
+                android:padding="15dp"
+                android:text="Nota"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/josefin_sans"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Recuerda que es importante entregar los documentos faltantes a la oficina de control escolar."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15sp"
+                android:checked="false"
+                android:layoutDirection="rtl"
+                android:text="Acta de Nacimiento"
+                android:textColor="@color/black"
+                app:buttonIconTint="#EB7426"
+                android:paddingLeft="40dp"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15sp"
+                android:checked="false"
+                android:layoutDirection="rtl"
+                android:text="Curp"
+                android:textColor="@color/black"
+                app:buttonIconTint="#EB7426"
+                android:paddingLeft="40dp"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15sp"
+                android:checked="false"
+                android:layoutDirection="rtl"
+                android:text="Certificado"
+                android:textColor="@color/black"
+                app:buttonIconTint="#EB7426"
+                android:paddingLeft="40dp"
+                />
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="297dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/josefin_sans_medium"
+        android:padding="15dp"
+        android:text="Evaluacion a Docencia"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.324"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.073" />
+        app:layout_constraintVertical_bias="0.682" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="337dp"
+        android:layout_height="65dp"
+        android:fontFamily="@font/josefin_sans"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Para realizar la encuesta de evaluación
+a los docentes da  click al boton."
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.757" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="45sp"
+        android:layout_marginTop="5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.311"
+        app:srcCompat="@mipmap/file" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="55sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384"
+        app:srcCompat="@mipmap/file" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="45sp"
+        android:layout_marginTop="5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.442"
+        app:srcCompat="@mipmap/file" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
