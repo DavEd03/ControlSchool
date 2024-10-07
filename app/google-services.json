@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "999306012944",
+    "project_id": "controlschool-9fdc0",
+    "storage_bucket": "controlschool-9fdc0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999306012944:android:932a6bc3aaf814e83b9d95",
+        "android_client_info": {
+          "package_name": "com.develompent.controlschool"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASLLiRvDuDd0hPQr3HYot4z5MAFsPaasU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
