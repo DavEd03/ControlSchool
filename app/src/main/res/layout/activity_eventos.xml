@@ -5,23 +5,24 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E9DBCE"
+    android:background="#7C989C"
     tools:context=".Eventos">
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="284dp"
-        android:layout_height="40dp"
+        android:layout_width="414dp"
+        android:layout_height="66dp"
+        android:background="#E3EFF3"
         android:fontFamily="@font/josefin_sans_bold"
         android:text="Eventos proximos"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.034" />
+        app:layout_constraintVertical_bias="0.019" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -34,11 +35,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.034"
-        app:srcCompat="@mipmap/regreso" />
+        app:srcCompat="@mipmap/regresar" />
 
     <ScrollView
-        android:layout_width="224dp"
-        android:layout_height="310dp"
+        android:layout_width="370dp"
+        android:layout_height="379dp"
+        android:background="@drawable/frame_lay"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -46,9 +48,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.41">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

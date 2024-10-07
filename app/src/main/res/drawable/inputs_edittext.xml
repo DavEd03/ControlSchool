@@ -4,5 +4,5 @@
     <corners android:radius="15dp" /> <!-- Radio de esquinas redondeadas -->
     <stroke
         android:width="5dp"
-        android:color="#EB7426" /> <!-- Bordes naranjas -->
+        android:color="#11A1C9" /> <!-- Bordes naranjas -->
 </shape>

@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#516064"
+    android:background="#7C989C"
     tools:context=".Doc">
 
     <Button
@@ -23,13 +23,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.825"
-        app:strokeColor="#EB7426"
+        app:strokeColor="#11A1C9    "
         app:strokeWidth="3dp" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="172dp"
-        android:layout_height="54dp"
+        android:layout_width="424dp"
+        android:layout_height="55dp"
+        android:background="#E3EFF3"
         android:fontFamily="@font/josefin_sans_bold"
         android:text="Expediente "
         android:textAlignment="center"
@@ -37,7 +38,7 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.034" />
@@ -49,11 +50,11 @@
         android:onClick="MenuBack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.034"
-        app:srcCompat="@mipmap/regreso" />
+        app:layout_constraintVertical_bias="0.041"
+        app:srcCompat="@mipmap/regresar" />
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -103,11 +104,10 @@
                 android:layout_marginEnd="15sp"
                 android:checked="false"
                 android:layoutDirection="rtl"
+                android:paddingLeft="40dp"
                 android:text="Acta de Nacimiento"
                 android:textColor="@color/black"
-                app:buttonIconTint="#EB7426"
-                android:paddingLeft="40dp"
-                />
+                app:buttonIconTint="#EB7426" />
 
             <CheckBox
                 android:id="@+id/checkBox1"
@@ -133,11 +133,10 @@
                 android:layout_marginEnd="15sp"
                 android:checked="false"
                 android:layoutDirection="rtl"
+                android:paddingLeft="40dp"
                 android:text="Certificado"
                 android:textColor="@color/black"
-                app:buttonIconTint="#EB7426"
-                android:paddingLeft="40dp"
-                />
+                app:buttonIconTint="#EB7426" />
 
 
         </LinearLayout>

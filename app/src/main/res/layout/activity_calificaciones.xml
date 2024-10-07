@@ -5,13 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#516064"
+    android:background="#7C989C"
     tools:context=".calificaciones">
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="425dp"
+        android:layout_height="54dp"
+        android:background="#E3EFF3"
         android:fontFamily="@font/josefin_sans_bold"
         android:text="Calificaciones"
         android:textAlignment="center"
@@ -19,9 +20,10 @@
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.034" />
+        app:layout_constraintVertical_bias="0.032" />
 
     <TextView
         android:id="@+id/textView2"
@@ -48,7 +50,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.034"
-        app:srcCompat="@mipmap/regreso" />
+        app:srcCompat="@mipmap/regresar" />
 
     <TextView
         android:id="@+id/textView"
@@ -121,14 +123,16 @@
         app:layout_constraintVertical_bias="0.219" />
 
     <FrameLayout
-        android:layout_width="409dp"
-        android:layout_height="660dp"
+        android:layout_width="384dp"
+        android:layout_height="276dp"
         android:layout_marginTop="236dp"
+        android:background="@drawable/frame_lay"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0">
 
     </FrameLayout>
 
