@@ -161,7 +161,7 @@
         android:id="@+id/imageView3"
         android:layout_width="44dp"
         android:layout_height="41dp"
-        android:onClick="Regresar"
+        android:onClick="cerrarSesion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.956"
