@@ -193,23 +193,24 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                app:srcCompat="@mipmap/calendar_24_01"
+                tools:layout_editor_absoluteX="166dp"
+                tools:layout_editor_absoluteY="173dp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                app:srcCompat="@mipmap/calendar_estadias_24_01"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="244dp" />
         </LinearLayout>
     </ScrollView>
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="246dp"
-        android:layout_height="109dp"
-        app:srcCompat="@mipmap/calendar_24_01"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="178dp" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="107dp"
-        android:layout_height="166dp"
-        app:srcCompat="@mipmap/calendar_estadias_24_01"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="270dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
