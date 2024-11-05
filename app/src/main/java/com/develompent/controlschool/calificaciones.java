@@ -3,6 +3,7 @@ package com.develompent.controlschool;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -52,23 +53,31 @@ public class calificaciones extends AppCompatActivity {
     private void obtenerCalificacion(){
         try{
             FirebaseDatabase database=FirebaseDatabase.getInstance();
-            DatabaseReference ruta= database.getReference("Alumnos").child("DGS").child("10").child(userId).child("Calificaciones");
+            DatabaseReference ruta= database.getReference("Alumnos").child("DGS").child("10")
+                    .child(userId).child("Calificaciones");
             ruta.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     arrayList.clear();
-                    for(DataSnapshot variables:snapshot.getChildren()){
-                        HashMap calif=(HashMap) variables.getValue();
-                        String Materia= String.valueOf(calif.get("").toString());
-                        String Calificacion= String.valueOf(calif.get("mensaje").toString());
+                    for(DataSnapshot variables:snapshot.getChildren()) {
+                        HashMap calif = (HashMap) variables.getValue();
+                        String Materia = String.valueOf(calif.get("U1").toString());
+                        String Calificacion = String.valueOf(calif.get("Ingles").toString());
 
-                        arrayList.add("Materia: "+Titulo+", calificacion: "+Mensaje);
+                        arrayList.add("Materia: " + Materia + ", calificacion: " + Calificacion);
 
+                    }
+                        ArrayAdapter<String> adaptador= new ArrayAdapter<>(getBaseContext(),
+                                android.R.layout.simple_expandable_list_item_1,arrayList);
+                        lstCalificaciones.setAdapter(adaptador);
+                    }
 
                         @Override
                 public void onCancelled(@NonNull DatabaseError error) {
+                            Toast.makeText(calificaciones.this,"Error al recuperar los datos",Toast.LENGTH_LONG).show();
 
-                }
+
+                        }
             });
 
         }catch(Exception e){
