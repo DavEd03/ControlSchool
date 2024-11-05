@@ -20,6 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class calificaciones extends AppCompatActivity {
     private ArrayList<String> arrayList;
@@ -37,23 +38,34 @@ public class calificaciones extends AppCompatActivity {
         });
         arrayList=new ArrayList<>();
         lstCalificaciones=findViewById(R.id.LstCalificaciones);
+        Bundle datos = getIntent().getExtras();
+        userId = datos.getString("nUsuario");
 
     }
-    public void MenuBack(View view) {
-        Intent intent = new Intent(this, Menu.class);
-        startActivity(intent);
-}
-private void obtenerCalificacion(){
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        obtenerCalificacion();
+    }
+
+    private void obtenerCalificacion(){
         try{
             FirebaseDatabase database=FirebaseDatabase.getInstance();
-            DatabaseReference ruta= database.getReference("Alumnos").child("DGS").child("10").child("");
+            DatabaseReference ruta= database.getReference("Alumnos").child("DGS").child("10").child(userId).child("Calificaciones");
             ruta.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    m
-                }
+                    arrayList.clear();
+                    for(DataSnapshot variables:snapshot.getChildren()){
+                        HashMap calif=(HashMap) variables.getValue();
+                        String Materia= String.valueOf(calif.get("").toString());
+                        String Calificacion= String.valueOf(calif.get("mensaje").toString());
 
-                @Override
+                        arrayList.add("Materia: "+Titulo+", calificacion: "+Mensaje);
+
+
+                        @Override
                 public void onCancelled(@NonNull DatabaseError error) {
 
                 }
@@ -63,5 +75,10 @@ private void obtenerCalificacion(){
             Toast.makeText(calificaciones.this, "Error en :"+e.getMessage().toString(),Toast.LENGTH_LONG).show();
     }
 }
+
+public void MenuBack(View view) {
+        Intent intent = new Intent(this, Menu.class);
+        startActivity(intent);
+    }
 
 }
