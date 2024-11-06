@@ -31,7 +31,7 @@ import java.util.Map;
 public class calificaciones extends AppCompatActivity {
     private ArrayList<String> arrayList;
     private ListView lstCalificaciones;
-    private TextView Carreras, CUATRIS, Nombre;gi
+    private TextView Carreras, CUATRIS, Nombre;
     String userId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
