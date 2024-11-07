@@ -67,6 +67,7 @@ public class Menu extends AppCompatActivity {
     }
     public void Calificaciones(View view) {
         Intent intent = new Intent(this, calificaciones.class);
+        intent.putExtra("nUsuario",userId);
         startActivity(intent);
     }
     public void Eventos(View view) {

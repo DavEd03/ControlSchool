@@ -81,11 +81,11 @@
         app:layout_constraintVertical_bias="0.178" />
 
     <TextView
-        android:id="@+id/carrera"
+        android:id="@+id/carrer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/josefin_sans"
-        android:text="Desarrollo y Gestion de Software"
+        android:text=""
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,11 +95,11 @@
         app:layout_constraintVertical_bias="0.135" />
 
     <TextView
-        android:id="@+id/cuatrimestre"
+        android:id="@+id/cuatris"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/josefin_sans"
-        android:text="Enero - Abril (8IDGS)"
+        android:text=""
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -109,11 +109,11 @@
         app:layout_constraintVertical_bias="0.178" />
 
     <TextView
-        android:id="@+id/nombre"
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/josefin_sans"
-        android:text="name"
+        android:text=""
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -123,8 +123,8 @@
         app:layout_constraintVertical_bias="0.219" />
 
     <FrameLayout
-        android:layout_width="392dp"
-        android:layout_height="331dp"
+        android:layout_width="394dp"
+        android:layout_height="423dp"
         android:layout_marginTop="236dp"
         android:background="@drawable/frame_lay"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -135,27 +135,138 @@
         app:layout_constraintVertical_bias="0.091">
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="281dp"
-            android:layout_margin="15dp"
-            android:orientation="vertical">
+        <TableLayout
+            android:id="@+id/info"
+            android:layout_width="374dp"
+            android:layout_height="346dp"
+            android:layout_marginLeft="10dp"
+            android:stretchColumns="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.539"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.452">
 
+            <TableRow android:layout_marginTop="20dp">
 
-            <TextView
-                android:id="@+id/textView16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+                <TextView
+                    android:id="@+id/mat1"
+                    android:layout_marginRight="20dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
 
-            <ListView
-                android:id="@+id/LstCalificaciones"
-                android:layout_width="match_parent"
-                android:layout_height="263dp">
+                <TextView
+                    android:id="@+id/materia1"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:textColor="@color/black" />
+            </TableRow>
 
-            </ListView>
+            <TableRow android:layout_marginTop="10dp">
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/mat2"
+                    android:layout_marginRight="20dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/materia2"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/mat3"
+                    android:layout_marginRight="20dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/materia3"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/mat4"
+                    android:layout_marginRight="20dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/materia4"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/mat5"
+                    android:layout_marginRight="20dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/materia5"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/mat6"
+                    android:layout_marginRight="20dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/materia6"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/mat7"
+                    android:layout_marginRight="20dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/materia7"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:textColor="@color/black" />
+            </TableRow>
+        </TableLayout>
     </FrameLayout>
 
 
