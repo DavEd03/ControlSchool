@@ -55,12 +55,6 @@ public class Menu extends AppCompatActivity {
         }
     }
 
-    private void ObtenerDatos (){
-        FirebaseDatabase database=FirebaseDatabase.getInstance();
-        DatabaseReference ruta= database.getReference("Cuentas").child(userId);
-
-    }
-
     public void Acceder(View view) {
         Intent intent = new Intent(this, Menu.class);
         startActivity(intent);
@@ -76,6 +70,7 @@ public class Menu extends AppCompatActivity {
     }
     public void Documentacion(View view) {
         Intent intent = new Intent(this, Doc.class);
+        intent.putExtra("nUsuario",userId);
         startActivity(intent);
     }
 

@@ -96,7 +96,7 @@
                 android:textSize="18sp" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/DocBox1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15sp"
@@ -110,7 +110,7 @@
                 app:buttonIconTint="#EB7426" />
 
             <CheckBox
-                android:id="@+id/checkBox1"
+                android:id="@+id/DocBox2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15sp"
@@ -125,7 +125,7 @@
                 />
 
             <CheckBox
-                android:id="@+id/checkBox2"
+                android:id="@+id/DocBox3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15sp"
