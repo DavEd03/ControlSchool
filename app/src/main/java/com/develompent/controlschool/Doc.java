@@ -37,6 +37,7 @@ public class Doc extends AppCompatActivity {
         userId= datos.getString("nUsuario");
         ch1=findViewById(R.id.DocBox1);
         ch2=findViewById(R.id.DocBox2);
+        //Checkbox
         ch3=findViewById(R.id.DocBox3);
     }
     @Override
