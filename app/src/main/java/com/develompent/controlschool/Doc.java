@@ -37,7 +37,6 @@ public class Doc extends AppCompatActivity {
         userId= datos.getString("nUsuario");
         ch1=findViewById(R.id.DocBox1);
         ch2=findViewById(R.id.DocBox2);
-        //Checkbox
         ch3=findViewById(R.id.DocBox3);
     }
     @Override
@@ -60,6 +59,10 @@ public class Doc extends AppCompatActivity {
             }
             );
         }
+    }
+    public void Events(View view){
+        Intent intent = new Intent(this, Enquestas.class);
+        startActivity(intent);
     }
     public void MenuBack(View view) {
         Intent intent = new Intent(this, Menu.class);
@@ -101,4 +104,12 @@ public class Doc extends AppCompatActivity {
                 });
 
     }}
+    private void showErrorAndRedirect() {
+        // Mostrar un mensaje de error al usuario
+        Toast.makeText(this, "Error al obtener la información del usuario. Por favor, intenta iniciar sesión nuevamente.", Toast.LENGTH_LONG).show();
+        // Redirigir al usuario a la pantalla de inicio de sesión
+        Intent intent = new Intent(this, Doc.class);
+        startActivity(intent);
+        finish(); // Cerrar la actividad actual
+    }
 }

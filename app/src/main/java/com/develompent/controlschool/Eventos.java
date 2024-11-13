@@ -49,6 +49,7 @@ public class Eventos extends AppCompatActivity {
         Intent intent = new Intent(this, Menu.class);
         startActivity(intent);
     }
+
     private void obtenerEventos(){
         FirebaseDatabase database= FirebaseDatabase.getInstance();
         DatabaseReference ruta=database.getReference("Eventos");
