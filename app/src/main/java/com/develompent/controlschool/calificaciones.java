@@ -118,7 +118,6 @@ public class calificaciones extends AppCompatActivity {
                             for (DataSnapshot childSnapshot : snapshot.getChildren()) {
                                 String nombreElemento = childSnapshot.getKey(); // Nombre del elemento
                                 String valorElemento = childSnapshot.getValue(String.class); // Valor del elemento
-
                                 // Dependiendo del índice, llenamos los EditText correspondientes
                                 switch (index) {
                                     case 1:
