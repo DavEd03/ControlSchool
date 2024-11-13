@@ -13,17 +13,17 @@
         android:layout_width="168dp"
         android:layout_height="47dp"
         android:backgroundTint="#FFFFFF"
+        android:onClick="Events"
         android:text="Ir"
         android:textColor="#000000"
         android:textColorLink="@color/white"
         app:cornerRadius="10dp"
-        android:onClick="Events"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintHorizontal_bias="0.847"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.825"
+        app:layout_constraintVertical_bias="0.883"
         app:strokeColor="#11A1C9    "
         app:strokeWidth="3dp" />
 
@@ -145,8 +145,8 @@
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="297dp"
-        android:layout_height="60dp"
+        android:layout_width="327dp"
+        android:layout_height="61dp"
         android:fontFamily="@font/josefin_sans_medium"
         android:padding="15dp"
         android:text="Evaluacion a Docencia"
@@ -154,7 +154,6 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.324"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.682" />
@@ -172,9 +171,10 @@ a los docentes da  click al boton."
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.757" />
+        app:layout_constraintVertical_bias="0.777" />
 
     <ImageView
         android:id="@+id/imageView8"
