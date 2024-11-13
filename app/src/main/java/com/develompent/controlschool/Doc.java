@@ -84,12 +84,15 @@ public class Doc extends AppCompatActivity {
                             switch (index) {
                                 case 1:
                                     ch1.setChecked("SI".equals(valorElemento)); // Marca el CheckBox si el valor es "SI"
+                                    ch1.setEnabled(false);
                                     break;
                                 case 2:
                                     ch2.setChecked("SI".equals(valorElemento)); // Marca el CheckBox si el valor es "SI"
+                                    ch2.setEnabled(false);
                                     break;
                                 case 3:
                                     ch3.setChecked("SI".equals(valorElemento)); // Marca el CheckBox si el valor es "SI"
+                                    ch3.setEnabled(false);
                                     break;
 
                             } index++;
