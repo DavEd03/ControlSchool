@@ -139,7 +139,9 @@
             android:id="@+id/info"
             android:layout_width="374dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
             android:stretchColumns="1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -154,7 +156,7 @@
 
                 <TextView
                     android:id="@+id/titul"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginRight="25dp"
                     android:padding="8dp"
                     android:text="Materia"
                     android:fontFamily="@font/josefin_sans_bold"
@@ -163,18 +165,21 @@
 
                 <TextView
                     android:id="@+id/titul0"
+                    android:layout_width="207dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/white"
-                    android:text="Calificaciones"
                     android:fontFamily="@font/josefin_sans_bold"
+                    android:text="Calificaciones"
+
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/titul1"
+                    android:layout_width="wrap_content"
                     android:layout_marginRight="10dp"
                     android:background="@color/white"
-                    android:text="Nivel"
                     android:fontFamily="@font/josefin_sans_bold"
+                    android:text="Nivel"
                     android:textColor="@color/black" />
             </TableRow>
 
@@ -182,7 +187,7 @@
 
                 <TextView
                     android:id="@+id/materia1"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginRight="25dp"
                     android:padding="8dp"
                     android:text=""
                     android:textAlignment="center"
@@ -192,6 +197,8 @@
                     android:id="@+id/cal1"
                     android:layout_marginRight="10dp"
                     android:background="@color/white"
+                    android:textAlignment="center"
+
                     android:textColor="@color/black" />
 
                 <TextView
@@ -205,7 +212,7 @@
 
                 <TextView
                     android:id="@+id/materia2"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginRight="25dp"
                     android:padding="8dp"
                     android:text=""
                     android:textAlignment="center"
@@ -214,6 +221,7 @@
                 <TextView
                     android:id="@+id/cal2"
                     android:layout_marginRight="10dp"
+                    android:textAlignment="center"
                     android:background="@color/white"
                     android:textColor="@color/black" />
 
@@ -228,7 +236,7 @@
 
                 <TextView
                     android:id="@+id/materia3"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginRight="25dp"
                     android:padding="8dp"
                     android:text=""
                     android:textAlignment="center"
@@ -237,6 +245,7 @@
                 <TextView
                     android:id="@+id/cal3"
                     android:layout_marginRight="10dp"
+                    android:textAlignment="center"
                     android:background="@color/white"
                     android:textColor="@color/black" />
 
@@ -251,7 +260,7 @@
 
                 <TextView
                     android:id="@+id/materia4"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginRight="25dp"
                     android:padding="8dp"
                     android:text=""
                     android:textAlignment="center"
@@ -261,6 +270,7 @@
                     android:id="@+id/cal4"
                     android:layout_marginRight="10dp"
                     android:background="@color/white"
+                    android:textAlignment="center"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -274,7 +284,7 @@
 
                 <TextView
                     android:id="@+id/materia5"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginRight="25dp"
                     android:padding="8dp"
                     android:text=""
                     android:textAlignment="center"
@@ -284,6 +294,7 @@
                     android:id="@+id/cal5"
                     android:layout_marginRight="10dp"
                     android:background="@color/white"
+                    android:textAlignment="center"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -297,7 +308,7 @@
 
                 <TextView
                     android:id="@+id/materia6"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginRight="25dp"
                     android:padding="8dp"
                     android:text=""
                     android:textAlignment="center"
@@ -307,6 +318,7 @@
                     android:id="@+id/cal6"
                     android:layout_marginRight="10dp"
                     android:background="@color/white"
+                    android:textAlignment="center"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -320,7 +332,7 @@
 
                 <TextView
                     android:id="@+id/materia7"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginRight="25dp"
                     android:padding="8dp"
                     android:text=""
                     android:textAlignment="center"
@@ -329,6 +341,7 @@
                 <TextView
                     android:id="@+id/cal7"
                     android:layout_marginRight="10dp"
+                    android:textAlignment="center"
                     android:background="@color/white"
                     android:textColor="@color/black" />
 
@@ -346,15 +359,15 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="364dp"
-        android:layout_height="131dp"
-        android:textColor="@color/black"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="100dp"
+        android:layout_width="377dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="112dp"
+        android:fontFamily="@font/josefin_sans_bold"
         android:text="NOTA: La calificación mínima aprobatoria por materia es 8
 NIVEL: NA= No Acreditado, SA= Satisfactorio, DE= Destacado, AU= Autónomo"
+        android:textColor="@color/black"
         android:textSize="13dp"
-        android:fontFamily="@font/josefin_sans_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

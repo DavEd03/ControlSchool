@@ -25,7 +25,7 @@ public class Enquestas extends AppCompatActivity {
         webEnques = enquest.getSettings();
         webEnques.setJavaScriptEnabled(true);
         webEnques.setDomStorageEnabled(true);
-        enquest.loadUrl("https://www.google.com.mx/?hl=es");
+        enquest.loadUrl("https://docs.google.com/forms/u/0/d/e/1FAIpQLSfdTePV0rEQIv7KAdeBB6aPjYDtCpleeg92tPV7tJSsvJ6u5Q/viewform?pli=1");
         enquest.setWebViewClient(new WebViewClient());
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
