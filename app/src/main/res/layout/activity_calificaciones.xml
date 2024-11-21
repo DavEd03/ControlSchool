@@ -137,11 +137,11 @@
 
         <TableLayout
             android:id="@+id/info"
-            android:layout_width="374dp"
+            android:layout_width="372dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="30dp"
             android:stretchColumns="1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -157,25 +157,25 @@
                 <TextView
                     android:id="@+id/titul"
                     android:layout_marginRight="25dp"
+                    android:fontFamily="@font/josefin_sans_bold"
                     android:padding="8dp"
                     android:text="Materia"
-                    android:fontFamily="@font/josefin_sans_bold"
                     android:textAlignment="center"
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/titul0"
-                    android:layout_width="207dp"
+                    android:layout_width="176dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/white"
                     android:fontFamily="@font/josefin_sans_bold"
                     android:text="Calificaciones"
-
+                    android:textAlignment="center"
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/titul1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="54dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/white"
                     android:fontFamily="@font/josefin_sans_bold"
@@ -221,8 +221,8 @@
                 <TextView
                     android:id="@+id/cal2"
                     android:layout_marginRight="10dp"
-                    android:textAlignment="center"
                     android:background="@color/white"
+                    android:textAlignment="center"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -245,8 +245,8 @@
                 <TextView
                     android:id="@+id/cal3"
                     android:layout_marginRight="10dp"
-                    android:textAlignment="center"
                     android:background="@color/white"
+                    android:textAlignment="center"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -341,8 +341,8 @@
                 <TextView
                     android:id="@+id/cal7"
                     android:layout_marginRight="10dp"
-                    android:textAlignment="center"
                     android:background="@color/white"
+                    android:textAlignment="center"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -359,8 +359,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="377dp"
-        android:layout_height="142dp"
+        android:layout_width="373dp"
+        android:layout_height="100dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="112dp"
         android:fontFamily="@font/josefin_sans_bold"

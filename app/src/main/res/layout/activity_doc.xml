@@ -8,25 +8,6 @@
     android:background="#7C989C"
     tools:context=".Doc">
 
-    <Button
-        android:id="@+id/acceder2"
-        android:layout_width="168dp"
-        android:layout_height="47dp"
-        android:backgroundTint="#FFFFFF"
-        android:onClick="Events"
-        android:text="Ir"
-        android:textColor="#000000"
-        android:textColorLink="@color/white"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.883"
-        app:strokeColor="#11A1C9    "
-        app:strokeWidth="3dp" />
-
     <TextView
         android:id="@+id/textView9"
         android:layout_width="424dp"
@@ -72,7 +53,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="616dp"
             android:orientation="vertical">
 
             <TextView
@@ -119,11 +100,10 @@
                 android:layout_marginEnd="15sp"
                 android:checked="false"
                 android:layoutDirection="rtl"
+                android:paddingLeft="40dp"
                 android:text="Curp"
                 android:textColor="@color/black"
-                app:buttonIconTint="#EB7426"
-                android:paddingLeft="40dp"
-                />
+                app:buttonIconTint="#EB7426" />
 
             <CheckBox
                 android:id="@+id/DocBox3"
@@ -142,39 +122,6 @@
 
         </LinearLayout>
     </FrameLayout>
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="327dp"
-        android:layout_height="61dp"
-        android:fontFamily="@font/josefin_sans_medium"
-        android:padding="15dp"
-        android:text="Evaluacion a Docencia"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.682" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="337dp"
-        android:layout_height="65dp"
-        android:fontFamily="@font/josefin_sans"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:text="Para realizar la encuesta de evaluación
-a los docentes da  click al boton."
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.777" />
 
     <ImageView
         android:id="@+id/imageView8"

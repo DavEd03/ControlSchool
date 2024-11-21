@@ -73,8 +73,12 @@ public class Menu extends AppCompatActivity {
         intent.putExtra("nUsuario",userId);
         startActivity(intent);
     }
+    public void Encuestas(View view) {
+        Intent intent = new Intent(this, Enquestas.class);
+        startActivity(intent);
+    }
 
-    private void showErrorAndRedirect() {
+        private void showErrorAndRedirect() {
         // Mostrar un mensaje de error al usuario
         Toast.makeText(this, "Error al obtener la información del usuario. Por favor, intenta iniciar sesión nuevamente.", Toast.LENGTH_LONG).show();
         // Redirigir al usuario a la pantalla de inicio de sesión
