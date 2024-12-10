@@ -62,7 +62,7 @@ public class Eventos extends AppCompatActivity {
                     String Titulo=String.valueOf(deventos.get("Titulo").toString());
                     String Descripcion=String.valueOf(deventos.get("Descripcion").toString());
                     String Fecha=String.valueOf(deventos.get("Fecha").toString());
-                    arraList.add("Evento:   "+Titulo+ "         "+ " Descripción:      "+Descripcion+ "         "+" Fecha:      "+Fecha);
+                    arraList.add("Evento: "+Titulo+ "                  "+ " Descripción: "+Descripcion+ "                     "+" Fecha: "+Fecha);
 
                 }
                 ArrayAdapter<String> adaptador=new ArrayAdapter<>(getBaseContext(),

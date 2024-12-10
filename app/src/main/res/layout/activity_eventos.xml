@@ -59,9 +59,10 @@
 
             <ListView
                 android:id="@+id/lstEventos"
-                android:layout_width="345dp"
-                android:layout_height="507dp"
-                android:fontFamily="@font/josefin_sans" />
+                android:layout_width="323dp"
+                android:layout_height="569dp"
+                android:fontFamily="@font/josefin_sans"
+                android:padding="8dp" />
 
         </LinearLayout>
     </ScrollView>
