@@ -113,13 +113,22 @@ public class calificaciones extends AppCompatActivity {
             );
             }
         }
-        public void obtener_nivel(calificaciones){
-        if (){
-            return "AU";9
-            }
+    private String asignarNivel(int calificacion) {
+        if (calificacion < 8) {
+            return "NA"; // No Acreditado
+        } else if (calificacion == 8) {
+            return "SA"; // Satisfactorio
+        } else if (calificacion == 9) {
+            return "DE"; // Destacado
+        } else if (calificacion == 10) {
+            return "AU"; // Autónomo
+        } else {
+            return "NA"; // Si es algún valor no esperado, retornar NA
         }
+    }
 
-        private void obtener_datos(){
+
+    private void obtener_datos(){
             databaseReference=FirebaseDatabase.getInstance().getReference("Alumnos").child(carrera).child(cuatri).child("Calificaciones").child(matricula).child("U1");
             //Toast.makeText(calificaciones.this,": "+databaseReference, Toast.LENGTH_LONG).show();
             if(databaseReference != null){
@@ -132,35 +141,47 @@ public class calificaciones extends AppCompatActivity {
                             for (DataSnapshot childSnapshot : snapshot.getChildren()) {
                                 String nombreElemento = childSnapshot.getKey(); // Nombre del elemento
                                 String valorElemento = childSnapshot.getValue(String.class); // Valor del elemento
+                                int calificacion = Integer.parseInt(valorElemento); // Convertir a entero
+
+                                // Asignar el nivel
+                                String nivel = asignarNivel(calificacion);
                                 // Dependiendo del índice, llenamos los EditText correspondientes
                                 switch (index) {
                                     case 1:
                                         mat1.setText(nombreElemento);
                                         cal1.setText(valorElemento);
+                                        // Mostrar el nivel en un TextView específico
+                                        nivel1.setText(nivel);
                                         break;
                                     case 2:
                                         mat2.setText(nombreElemento);
                                         cal2.setText(valorElemento);
+                                        nivel2.setText(nivel);
                                         break;
                                     case 3:
                                         mat3.setText(nombreElemento);
                                         cal3.setText(valorElemento);
+                                        nivel3.setText(nivel);
                                         break;
                                     case 4:
                                         mat4.setText(nombreElemento);
                                         cal4.setText(valorElemento);
+                                        nivel4.setText(nivel);
                                         break;
                                     case 5:
                                         mat5.setText(nombreElemento);
                                         cal5.setText(valorElemento);
+                                        nivel5.setText(nivel);
                                         break;
                                     case 6:
                                         mat6.setText(nombreElemento);
                                         cal6.setText(valorElemento);
+                                        nivel6.setText(nivel);
                                         break;
                                     case 7:
                                         mat7.setText(nombreElemento);
                                         cal7.setText(valorElemento);
+                                        nivel7.setText(nivel);
                                         break;
                                 }
                                 index++;

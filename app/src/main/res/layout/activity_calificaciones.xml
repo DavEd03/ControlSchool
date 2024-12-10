@@ -156,17 +156,17 @@
 
                 <TextView
                     android:id="@+id/titul"
-                    android:layout_marginRight="25dp"
                     android:fontFamily="@font/josefin_sans_bold"
                     android:padding="8dp"
                     android:text="Materia"
+                    android:textSize="15dp"
                     android:textAlignment="center"
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/titul0"
                     android:layout_width="176dp"
-                    android:layout_marginRight="10dp"
+                    android:textSize="15dp"
                     android:background="@color/white"
                     android:fontFamily="@font/josefin_sans_bold"
                     android:text="Calificaciones"
@@ -176,10 +176,10 @@
                 <TextView
                     android:id="@+id/titul1"
                     android:layout_width="54dp"
-                    android:layout_marginRight="10dp"
                     android:background="@color/white"
                     android:fontFamily="@font/josefin_sans_bold"
                     android:text="Nivel"
+                    android:textSize="15dp"
                     android:textColor="@color/black" />
             </TableRow>
 
@@ -187,7 +187,6 @@
 
                 <TextView
                     android:id="@+id/materia1"
-                    android:layout_marginRight="25dp"
                     android:padding="8dp"
                     android:text=""
                     android:textAlignment="center"
@@ -195,7 +194,6 @@
 
                 <TextView
                     android:id="@+id/cal1"
-                    android:layout_marginRight="10dp"
                     android:background="@color/white"
                     android:textAlignment="center"
 
@@ -203,7 +201,6 @@
 
                 <TextView
                     android:id="@+id/nivel1"
-                    android:layout_marginRight="10dp"
                     android:background="@color/white"
                     android:textColor="@color/black" />
             </TableRow>
@@ -212,7 +209,6 @@
 
                 <TextView
                     android:id="@+id/materia2"
-                    android:layout_marginRight="25dp"
                     android:padding="8dp"
                     android:text=""
                     android:textAlignment="center"
@@ -220,14 +216,12 @@
 
                 <TextView
                     android:id="@+id/cal2"
-                    android:layout_marginRight="10dp"
                     android:background="@color/white"
                     android:textAlignment="center"
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/nivel2"
-                    android:layout_marginRight="10dp"
                     android:background="@color/white"
                     android:textColor="@color/black" />
             </TableRow>
@@ -236,7 +230,6 @@
 
                 <TextView
                     android:id="@+id/materia3"
-                    android:layout_marginRight="25dp"
                     android:padding="8dp"
                     android:text=""
                     android:textAlignment="center"
@@ -244,14 +237,12 @@
 
                 <TextView
                     android:id="@+id/cal3"
-                    android:layout_marginRight="10dp"
                     android:background="@color/white"
                     android:textAlignment="center"
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/nivel3"
-                    android:layout_marginRight="10dp"
                     android:background="@color/white"
                     android:textColor="@color/black" />
             </TableRow>
@@ -260,7 +251,6 @@
 
                 <TextView
                     android:id="@+id/materia4"
-                    android:layout_marginRight="25dp"
                     android:padding="8dp"
                     android:text=""
                     android:textAlignment="center"
@@ -268,14 +258,12 @@
 
                 <TextView
                     android:id="@+id/cal4"
-                    android:layout_marginRight="10dp"
                     android:background="@color/white"
                     android:textAlignment="center"
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/nivel4"
-                    android:layout_marginRight="10dp"
                     android:background="@color/white"
                     android:textColor="@color/black" />
             </TableRow>
@@ -284,23 +272,20 @@
 
                 <TextView
                     android:id="@+id/materia5"
-                    android:layout_marginRight="25dp"
-                    android:padding="8dp"
+                     android:padding="8dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/cal5"
-                    android:layout_marginRight="10dp"
-                    android:background="@color/white"
+                     android:background="@color/white"
                     android:textAlignment="center"
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/nivel5"
-                    android:layout_marginRight="10dp"
-                    android:background="@color/white"
+                     android:background="@color/white"
                     android:textColor="@color/black" />
             </TableRow>
 
@@ -308,23 +293,20 @@
 
                 <TextView
                     android:id="@+id/materia6"
-                    android:layout_marginRight="25dp"
-                    android:padding="8dp"
+                     android:padding="8dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/cal6"
-                    android:layout_marginRight="10dp"
-                    android:background="@color/white"
+                     android:background="@color/white"
                     android:textAlignment="center"
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/nivel6"
-                    android:layout_marginRight="10dp"
-                    android:background="@color/white"
+                     android:background="@color/white"
                     android:textColor="@color/black" />
             </TableRow>
 
@@ -332,23 +314,20 @@
 
                 <TextView
                     android:id="@+id/materia7"
-                    android:layout_marginRight="25dp"
-                    android:padding="8dp"
+                     android:padding="8dp"
                     android:text=""
                     android:textAlignment="center"
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/cal7"
-                    android:layout_marginRight="10dp"
-                    android:background="@color/white"
+                     android:background="@color/white"
                     android:textAlignment="center"
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/nivel7"
-                    android:layout_marginRight="10dp"
-                    android:background="@color/white"
+                     android:background="@color/white"
                     android:textColor="@color/black" />
             </TableRow>
 
@@ -361,8 +340,8 @@
         android:id="@+id/textView"
         android:layout_width="373dp"
         android:layout_height="100dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="102dp"
         android:fontFamily="@font/josefin_sans_bold"
         android:text="NOTA: La calificación mínima aprobatoria por materia es 8
 NIVEL: NA= No Acreditado, SA= Satisfactorio, DE= Destacado, AU= Autónomo"
