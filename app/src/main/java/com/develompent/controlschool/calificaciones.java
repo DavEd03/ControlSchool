@@ -39,6 +39,7 @@ public class calificaciones extends AppCompatActivity {
     private DatabaseReference databaseReference,databaseReference2;
     public TextView mat1,mat2,mat3,mat4, mat5, mat6,mat7;
     public TextView cal1, cal2, cal3, cal4, cal5, cal6, cal7;
+    public TextView nivel1, nivel2, nivel3, nivel4, nivel5, nivel6, nivel7;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,6 +74,14 @@ public class calificaciones extends AppCompatActivity {
         cal5=findViewById(R.id.cal5);
         cal6=findViewById(R.id.cal6);
         cal7=findViewById(R.id.cal7);
+        //
+        nivel1=findViewById(R.id.nivel1);
+        nivel2=findViewById(R.id.nivel2);
+        nivel3=findViewById(R.id.nivel3);
+        nivel4=findViewById(R.id.nivel4);
+        nivel5=findViewById(R.id.nivel5);
+        nivel6=findViewById(R.id.nivel6);
+        nivel7=findViewById(R.id.nivel7);
 
     }
     @Override
@@ -102,6 +111,11 @@ public class calificaciones extends AppCompatActivity {
                 }
             }
             );
+            }
+        }
+        public void obtener_nivel(calificaciones){
+        if (){
+            return "AU";9
             }
         }
 
